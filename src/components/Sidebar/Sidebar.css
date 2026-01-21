@@ -17,9 +17,9 @@
     cursor: pointer;
 }
 
-.sidebar .new-chat {
+.sidebar .new-chat { 
     margin-top: 50px;
-    display: inline-flex;
+    display: inline-flex; 
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
