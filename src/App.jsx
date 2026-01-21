@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Main from "./components/Main/Main";
-import Sidebar from "./components/sidebar_temp/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   const [chats, setChats] = useState([]);
