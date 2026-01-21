@@ -88,7 +88,7 @@ const Main = ({ chats, setChats, activeChatIndex, setActiveChatIndex }) => {
     <div className="main">
       <div className="nav">
         <p>ShankGPT</p>
-        <img src={assets.beard_icon} alt="User Icon" />
+        <img src={assets.ShankGPT_icon} alt="User Icon" />
       </div>
 
       <div className="main-container">
