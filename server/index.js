@@ -28,7 +28,7 @@ app.post("/api/generate", async (req, res) => {
           Authorization: `Bearer ${process.env.GROQ_API_KEY}`,
         },
         body: JSON.stringify({
-          model: "llama-3.1-8b-instant", // ✅ UPDATED MODEL
+          model: "llama-3.1-8b-instant",
           messages: [
             { role: "system", content: "You are a helpful AI assistant." },
             { role: "user", content: prompt },
@@ -54,6 +54,9 @@ app.post("/api/generate", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("✅ Server running on http://localhost:5000");
+// ✅ FIXED FOR RENDER — DO NOT TOUCH THIS PART
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
